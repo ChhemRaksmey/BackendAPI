@@ -14,7 +14,7 @@ route.use((req, res, next) => {
 route.get('/', (req, res) => { res.status(200).json({ body:"data response" }); });
 
 
-route.listen(process.env.API_PORT, process.env.API_HOST, () => {
+route.listen(process.env.API_PORT, () => {
     console.log(`server up link ${ process.env.API_HOST }:${ process.env.API_PORT }`);
 });
 
